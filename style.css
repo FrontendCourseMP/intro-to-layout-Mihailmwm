@@ -1,7 +1,7 @@
 :root {
     --Wtext-color: #ffffff;
     --h3text-color: #4B4B4B;
-    --fat-text-color: #9EAF7C;
+    --gr-text-color: #9EAF7C;
     --Btext-color: #000;
     font-size: 62.5%;
 
@@ -38,6 +38,7 @@
 }
 
 /* inter-700 - latin */
+
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -52,14 +53,60 @@
     box-sizing: border-box;
 }
 
+header {
+ display: flex;
+ justify-content: space-between;
+ padding: 25px 43px 60px 47px;
+ position: absolute;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', 'san-seif';
 
     background-color: #F3F1EC;
+}
+
+.landing {
+    background-image: url(imgages/Group\ 58.jpg);
+    padding-top: 8.125rem;
+}
+
+.section_1 {
+    padding: 3.75rem 5.75rem;
+    background: transparent;
+    margin: 0;
+    border: 0;
 
 }
 
+.section_1 h2{
+    color: var(--Wtext-color);
+    font-size: 2.125rem;
+    font-weight: 300;
+    padding: 0 .8125rem;
+    font-family: Inter;
+    font-style: normal;
+}
+
+.section_1 p{
+    color: var(--Wtext-color);
+    font-family: Philosopher;
+ font-size: 2.5rem;
+ font-style: italic;
+ font-weight: 400;
+ line-height: normal;
+ padding: 0 .1875rem;
+}
+
+.right{
+    color: var(--Wtext-color);
+    font-family: Inter;
+    font-size: 2.125rem;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -2.04px;
+}
 
 p {
     color: var(--Btext-color);
@@ -127,11 +174,13 @@ h3 {
 .H1H {
     color: var(--Wtext-color);
 
+
     font-family: Philosopher;
     font-size: 4rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+     margin: auto 3.75rem;
 }
 
 .H2R {
@@ -156,7 +205,7 @@ h3 {
 }
 
 .H2v {
-    color: var(--Btext-color) color: #4B4B4B;
+    color: var(--Btext-color);
 
     font-family: Philosopher;
     font-size: 3.8rem;
@@ -228,7 +277,7 @@ h3 {
     height: 5.8rem;
     flex-shrink: 0;
     border-radius: 1rem;
-    background: #9EAF7C;
+    background: var(--gr-text-color);
     border: none;
 }
 
@@ -259,11 +308,13 @@ h3 {
 }
 
 .smbt {
-    padding: 13px;
-    border-radius: 60px;
+    /* padding: 13px; */
+    border-radius: 3.75rem;
     background: #9EAF7C;
     border: none;
-    margin-right: 8rem;
+    width: 45px;
+    height: 45px;
+    /* margin-right: 8rem; */
 }
 
 .ln {
@@ -271,7 +322,7 @@ h3 {
     height: 1.25px;
     flex-shrink: 0;
     border-radius: 100px;
-    background: #FFF;
+    background: var(--Wtext-color);
 }
 
 .bb1 {
@@ -279,6 +330,15 @@ h3 {
     height: 406.558px;
     flex-shrink: 0;
     border-radius: 20px;
-    background: #FFF;
+    background: var(--Wtext-color);
     border: none;
+}
+
+
+
+.csl {
+    width: 60px;
+height: 60px;
+flex-shrink: 0;
+fill: #9EAF7C;
 }
