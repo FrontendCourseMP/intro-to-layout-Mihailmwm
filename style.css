@@ -54,33 +54,104 @@
 }
 
 header {
- display: flex;
- justify-content: space-between;
- padding: 25px 43px 60px 47px;
- position: absolute;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 68px;
+    padding-right: 45px;
+    
 }
-
+.wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.dos {
+    padding-top: 20px;
+    padding-left: 0px;
+    
+}
+.dost {
+    margin: -80px -20px -10px 55px;
+    
+}
+.sktb {
+    
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding-left: 270px ;
+}
+   
+.first {
+    display: flex;
+    
+}
 body {
     margin: 0;
     font-family: 'Inter', 'san-seif';
 
     background-color: #F3F1EC;
 }
-
 .landing {
+    display: flex;
     background-image: url(imgages/Group\ 58.jpg);
     padding-top: 8.125rem;
+    background-repeat: no-repeat;
+    background-size: 85% auto;
+
+
+}
+.Kaz {
+    padding-left: 20px;
+    
+}
+.hrt1{
+    margin-top: 100px;
+    margin-left: -80px;
+    margin-bottom: -65px;
+}
+.hrt2{
+    margin-top: 0px;
+    margin-left: 130px;
+    margin-bottom: -65px;
+}
+.pic1 {
+    
+        width: 7%; /* Ширина */
+        float: left; /* Выстраиваем элементы по горизонтали */
+        margin: 0 0 0 3.5%; /* Отступ слева */
+        background: #f0f0f0; /* Цвет фона */
+        border-radius: 5px; /* Радиус скругления */
+        padding: 2%; /* Поля */
+}
+.b1 {
+    padding-top: 44px;
+}
+.nich {
+    background-image: url(imgages/sl2.jpg);
+    background-repeat: no-repeat;
+}
+
+.map {
+    background-image: url(imgages/map.jpg);
+    background-repeat: no-repeat;
+}
+
+.sofa {
+    background-image: url(imgages/sofa.png);
+    background-repeat: no-repeat;
 }
 
 .section_1 {
     padding: 3.75rem 5.75rem;
     background: transparent;
-    margin: 0;
-    border: 0;
+    margin-left: 17px;
+
 
 }
 
-.section_1 h2{
+.section_1 h2 {
     color: var(--Wtext-color);
     font-size: 2.125rem;
     font-weight: 300;
@@ -89,26 +160,26 @@ body {
     font-style: normal;
 }
 
-.section_1 p{
+.section_1 p {
     color: var(--Wtext-color);
     font-family: Philosopher;
- font-size: 2.5rem;
- font-style: italic;
- font-weight: 400;
- line-height: normal;
- padding: 0 .1875rem;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 .1875rem;
 }
 
-.right{
+.right {
     color: var(--Wtext-color);
     font-family: Inter;
     font-size: 2.125rem;
     font-weight: 300;
     line-height: normal;
-    letter-spacing: -2.04px;
+    
 }
 
-p {
+.p {
     color: var(--Btext-color);
 
     font-family: Inter;
@@ -116,17 +187,30 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
 }
 
+.pp {
+    color: var(--Wtext-color);
 
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Ulmb{
+    margin-left: -9px;
+}
 h2 {
-    color: var(--h2text-color);
+    color: var(--Wtext-color);
     font-family: Inter;
     font-size: 3.4rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    letter-spacing: -2.04px;
+    margin: 0px;
+
 }
 
 h3 {
@@ -137,10 +221,12 @@ h3 {
     font-weight: 700;
     line-height: 100%;
 }
+
 .bgc {
     background-color: #F3F1EC;
     background-size: 50%;
 }
+
 .p18 {
     color: var(--Btext-color);
 
@@ -180,7 +266,7 @@ h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-     margin: auto 3.75rem;
+    margin: auto 3.75rem;
 }
 
 .H2R {
@@ -215,7 +301,7 @@ h3 {
 }
 
 .PText {
-    color: var(--psection1text-color);
+    color: var(--Wtext-color);
 
     font-family: Inter;
     font-size: 1.8rem;
@@ -273,6 +359,9 @@ h3 {
 }
 
 .but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30rem;
     height: 5.8rem;
     flex-shrink: 0;
@@ -338,7 +427,7 @@ h3 {
 
 .csl {
     width: 60px;
-height: 60px;
-flex-shrink: 0;
-fill: #9EAF7C;
+    height: 60px;
+    flex-shrink: 0;
+    fill: #9EAF7C;
 }
