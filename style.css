@@ -64,19 +64,17 @@
     flex-direction: column;
     justify-content: center;
     margin-left: auto;
-    aling
+
 }
 .wrapper {
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0px 4px;
     z-index: 100;
 }
 .wrapper_2 {
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0px 4px;
     z-index: 50;
 }
@@ -131,7 +129,7 @@ body {
 }
 .pic1 {
         
-        width: 100%; Ширина 
+        width: 100%; 
         float: border: ;
     
         background: #f0f0f0; 
@@ -148,8 +146,10 @@ body {
     padding-top: 44px;
 }
 .nich {
-    background-image: url(imgages/sl2.jpg);
+    margin-top: 50px;
+    background-image: url(imgages/Desktop\ -\ 7.jpg);
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .map {
@@ -158,8 +158,10 @@ body {
 }
 
 .sofa {
-    background-image: url(imgages/sofa.png);
+    background-image: url(imgages/);
+    display: flex;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .section_1 {
@@ -211,6 +213,15 @@ body {
     padding: 3.75rem 5.75rem;
     background: transparent;
     margin-left: -15px;
+
+
+}
+.second {
+    display: flex;
+    background-image: url(imgages/Desktop\ -\ 7.jpg);
+    background-repeat: no-repeat;
+
+    
 
 
 }
