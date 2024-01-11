@@ -58,6 +58,7 @@
     padding-right: 170px;
     justify-content: space-between;
 }
+
 .cards {
     display: flex;
     gap: 35px;
@@ -66,8 +67,9 @@
     margin-left: auto;
 
 }
+
 .wrapper {
-    position:absolute ;
+    position: absolute;
     max-width: 716px;
     margin: 30px 0px 0px 20px;
 
@@ -76,19 +78,21 @@
 .dos {
     padding: 50px 10px 10px 0px;
 
-    
+
 }
+
 .dost {
     margin: -90px 10px 10px 70px;
-    
+
 }
-.sktb { 
+
+.sktb {
     padding-left: 190px;
     display: flex;
     justify-content: end;
 
 }
-   
+
 .first {
     display: flex;
     background: url(imgages/Group\ 58.jpg) 50%/ cover no-repeat;
@@ -96,55 +100,64 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 
-    
+
+
 }
+
 .umb {
     padding-left: 50px;
     padding-right: 70px;
 }
+
 body {
     margin: 0;
     font-family: 'Inter', 'san-seif';
 
     background-color: #F3F1EC;
 }
+
 .landing {
     display: flex;
     padding-top: 8.125rem;
-    
+
 
 
 }
+
 .Kaz {
     padding-left: 20px;
-    
+
 }
-.hrt1{
+
+.hrt1 {
     margin-top: 80px;
     margin-left: -80px;
     margin-bottom: -65px;
 }
-.hrt2{
+
+.hrt2 {
     margin-top: 0px;
     margin-left: 130px;
     margin-bottom: -65px;
 }
+
 .pic1 {
-        
-        width: 100%;  
-        margin-inline: auto;
-        display: flex;
-        justify-content: center;
-        flex-grow: 0;
-        width: 200px;
+
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    width: 200px;
 
 }
+
 .b1 {
     padding-top: 44px;
     padding-left: 30px;
 }
+
 .nich {
     display: flex;
     background: url(imgages/Desktop\ -\ 7.jpg) 50%/ cover no-repeat;
@@ -153,16 +166,18 @@ body {
     height: 100%;
     object-fit: cover;
 
-    
+
 }
+
 .contact {
 
- 
+
     margin-top: 50px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .mapp {
     margin-top: 50px;
     margin-bottom: -20px;
@@ -172,42 +187,48 @@ body {
 }
 
 .sofa {
-    margin-top: 100px;   
+    margin-top: 100px;
     background-image: url(imgages/sofa.png);
     position: relative;
     display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
-    
+
+
 }
+
 .obiz {
     margin-top: -150px;
 }
+
 .section_1 {
-    padding:  60px 30px 80px 30px;
+    padding: 60px 30px 80px 30px;
     background: transparent;
-    
+
 
 
 }
+
 .linee {
     padding: 0px 0px 40px 0px;
 }
+
 .ocomp {
     position: absolute;
-    margin: -80px 0px 50px 120px;
+    margin: -60px 0px 50px 120px;
 }
 
 .ocomp2 {
     position: absolute;
-    margin: -80px 0px 50px 80px;
+    margin: -60px 0px 50px 80px;
 }
+
 .ocomp3 {
     position: absolute;
-    margin: -80px 0px 50px 130px;
+    margin: -60px 0px 50px 130px;
 }
+
 .section_1 h2 {
     color: var(--Wtext-color);
     font-size: 2.125rem;
@@ -226,11 +247,13 @@ body {
     line-height: normal;
     padding: 0 .1875rem;
 }
+
 .section_2 {
-    
+
     background: transparent;
     margin-bottom: 30px;
 }
+
 .section_3 {
 
     padding: 0.75rem 5.75rem;
@@ -240,45 +263,92 @@ body {
 
 
 }
+
 .second {
     margin: 10px 10px 10px 0px;
     display: flex;
     background-repeat: no-repeat;
 
-    
+
 }
 
 .section_5 {
     padding: 60px 0px 0px 50px;
 }
+
+.section_6 {
+    padding: 0px 30px 80px 30px;
+    background: transparent;
+}
+
+.section_7 {
+    padding: 1500px 30px 80px 30px;
+    background: transparent;
+}
+
+.bl1 {
+    border-radius: 20px;
+    background: #FFF;
+    width: 300px;
+    height: 561px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.bl2 {
+    width: 300px;
+    height: 492px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-top: 20px;
+}
+
+.bl3 {
+    width: 300px;
+    height: 402px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    margin-top: 20px;
+}
+
 .nname {
     padding: 10px 10px 10px 0px;
 }
+
 .phon {
     padding: 10px 10px 10px 0px;
 }
+
 .vvod {
     padding: 10px 10px 10px 0px;
 }
+
 .oszv {
     padding: 10px 10px 100px 0px;
 }
+
 .od {
     position: absolute;
     margin: -190px 0px 50px 80px;
 }
+
 .ad {
     position: absolute;
     margin: -190px 100px 50px 80px;
 }
+
 .ed {
     position: absolute;
     margin: -245px 100px 50px 80px;
 }
+
 .od1 {
     position: absolute;
     margin: -165px 0px 50px 80px;
 }
+
 .ads {
     position: absolute;
     margin: -135px 54px 50px 80px;
@@ -288,6 +358,7 @@ body {
     position: absolute;
     margin: -135px 50px 50px 80px;
 }
+
 .eds {
     position: absolute;
     margin: -190px 53px 50px 80px;
@@ -295,19 +366,18 @@ body {
 
 
 
-.Obis {
+.Obis {}
 
-}
 .right {
     color: var(--Wtext-color);
     font-family: Inter;
     font-size: 2.125rem;
     font-weight: 300;
     line-height: normal;
-    
+
 }
 
-.p {
+p {
     color: var(--Btext-color);
 
     font-family: Inter;
@@ -327,9 +397,11 @@ body {
     font-weight: 400;
     line-height: normal;
 }
-.Ulmb{
+
+.Ulmb {
     margin-left: -9px;
 }
+
 h2 {
     color: var(--Wtext-color);
     font-family: Inter;
@@ -482,11 +554,15 @@ h3 {
 
 
 .basement {
-
     height: 51.3rem;
     background-color: #9EAF7C;
 }
-
+.txt {
+    padding: 50px 20px 20px 50px;
+}
+.ppc {
+    padding-left: 90px;
+}
 .but {
     display: flex;
     align-items: center;
@@ -498,11 +574,12 @@ h3 {
     background: var(--gr-text-color);
     border: none;
 }
+
 .but2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     width: 30rem;
     height: 5.8rem;
     flex-shrink: 0;
@@ -510,6 +587,7 @@ h3 {
     background: var(--gr-text-color);
     border: none;
 }
+
 .com {
     display: flex;
     width: 300px;
@@ -535,12 +613,14 @@ h3 {
     resize: none;
 
 }
+
 button {
     padding: 0;
     margin: 0;
     border: none;
     background-color: transparent;
 }
+
 .ln {
     width: 17.609px;
     height: 1.25px;
