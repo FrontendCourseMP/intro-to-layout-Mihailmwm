@@ -195,11 +195,12 @@
 }
 
 A {
-    color: red; /* Цвет ссылок */
+    color: red;
    }
    A:visited {
-    color: #ffffff; /* Цвет посещенных ссылок */
+    color: #ffffff; 
    }
    A:active {
-    color: #00000000; /* Цвет активных ссылок */
+    color: #00000000; 
    }
+   
