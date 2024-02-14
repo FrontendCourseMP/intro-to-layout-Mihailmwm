@@ -18,7 +18,7 @@
     border-top: 10px solid black;
     border-right: 10px solid black;
     border-left: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik2 {
@@ -26,7 +26,7 @@
     grid-column: span 2;
     border-top: 10px solid black;
     border-right: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik3 {
@@ -35,7 +35,7 @@
     background-color: red;
     border-right: 10px solid black;
     border-left: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik4 {
@@ -43,19 +43,19 @@
     grid-row: span 2;
     background-color: yellow;
     border-right: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik5 {
     grid-row: span 2;
     border-right: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik6 {
     grid-row: span 2;
     border-right: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik7 {
@@ -63,19 +63,19 @@
     border-top: 10px solid black;
     border-right: 10px solid black;
     border-left: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik8 {
     grid-column: span 1;
     border-right: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .cubik9 {
     grid-column: span 2;
     border-right: 10px solid black;
-    border-bottom:  10px solid black;
+    border-bottom: 10px solid black;
 }
 
 .main_grafics {
@@ -88,7 +88,7 @@
     background: #fff;
     display: grid;
     border-radius: 20px;
-    
+
     grid-template-columns: repeat(8, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
 }
@@ -98,9 +98,9 @@
 .grafic1 {
     grid-column: span 2;
     grid-row: span 4;
-    background-color: rgb(2, 99, 104);
+    background-color: rgb(104, 232, 238);
     border: 5px solid black;
-    
+
 }
 
 .grafic2 {
@@ -109,8 +109,8 @@
     background-color: rgb(251, 255, 0);
     border-top: 5px solid black;
     border-right: 5px solid black;
-    border-bottom:  5px solid black;
-    
+    border-bottom: 5px solid black;
+
 }
 
 .grafic3 {
@@ -140,8 +140,8 @@
     background-color: rgb(0, 0, 0);
     border-top: 5px solid black;
     border-right: 5px solid black;
-    border-bottom:  5px solid black;
-    
+    border-bottom: 5px solid black;
+
 }
 
 .grafic7 {
@@ -150,31 +150,26 @@
     background-color: rgb(247, 255, 2);
     border-top: 5px solid black;
     border-right: 5px solid black;
-    border-bottom:  5px solid black;
+    border-bottom: 5px solid black;
 
 }
 
-.main_square_pictures {   
-    display: grid;   
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
-    gap: 20px; 
-    
-  } 
+.main_square_pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 20px;
 
-.pictur {
-    
-    
 }
-  .main_square_pictur { 
-    width: 100%;   
-    object-fit: cover; 
+
+.pictur {}
+
+.main_square_pictur {
+    width: 100%;
+    object-fit: cover;
+}
 
 
-
-  } 
-
-
-  .button {
+.button {
 
     display: inline-block;
     padding: 12px 24px;
@@ -186,11 +181,25 @@
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    
-    
-    }
-     
-    .button:hover {  
-    background-color: #45a049;
-    }
-    
+
+
+}
+
+.button:hover {
+    background-color: #fe4400;
+}
+
+.nav-Link {
+    text-decoration: none;
+
+}
+
+A {
+    color: red; /* Цвет ссылок */
+   }
+   A:visited {
+    color: #ffffff; /* Цвет посещенных ссылок */
+   }
+   A:active {
+    color: #00000000; /* Цвет активных ссылок */
+   }
