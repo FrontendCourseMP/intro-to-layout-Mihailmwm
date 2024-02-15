@@ -17,25 +17,33 @@
         <fieldset style="max-width: fit-content; margin: auto; border-color: aqua; background-color: bisque;" >
             <legend>Registration field:</legend>
             <label>Name: <input type="text" name="name" size="30" maxlength="100" required="required"></label><br />
-            <label for="hear-about">Specify your date of birth:</label>
-            <input type="date" name="depart" />
+            <label>Specify your date of birth: <input type="date" name="date" /></label>
                 <p>
                     Specify your gender:<br />
                     <label><input type="radio" name="rating" value="Male"  /> Male</label>
                     <label><input type="radio" name="rating" value="Female" /> Female</label>
                     <label><input type="radio" name="rating" value="Not specified" /> Not specified</label>
                 </p>
-                <label for="password">Password:</label>
-			    <input type="password" name="password" required="required" />
+                <label>Password: <input type="password" name="password" required="required" /> </label>
                 
                 
-                <p>
-                    Convenient communication interval:<br />
-                    <input type="checkbox" name="" value=""  /> Morning
-                    <input type="checkbox" name="" value="" /> Afternoon
-                    <input type="checkbox" name="" value="" /> Evening
-                    <input type="checkbox" name="" value="" /> Night
-                </p>
+                    
+                    <p>
+                        Convenient communication interval:<br />
+                        <label>
+                            <input type="checkbox" name="" value=""  /> Morning
+                        </label>
+                        <label>
+                            <input type="checkbox" name="" value="" /> Afternoon
+                        </label>
+                        <label>
+                            <input type="checkbox" name="" value="" /> Evening
+                        </label>
+                        <label>
+                            <input type="checkbox" name="" value="" /> Night
+                        </label>
+                    </p>
+            
 
                 
         </fieldset><br />
