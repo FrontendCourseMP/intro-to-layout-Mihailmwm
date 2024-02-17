@@ -96,10 +96,12 @@
 .first {
     display: flex;
     background: url(imgages/Group\ 58.jpg) 50%/ cover no-repeat;
-    margin-top: -10px;
+    
+    margin: 0px 0px 0px 0px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 
 
 
@@ -111,7 +113,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px 0px 0px 0px;
     font-family: 'Inter', 'san-seif';
 
     background-color: #F3F1EC;
