@@ -55,8 +55,27 @@
 
 .header {
     display: flex;
-    padding-right: 170px;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.Logo,
+.Top_menu {
+    margin-right: 50px;
+    display: inline-block
+}
+
+.Top_menu li {
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Top_menu a {
+    vertical-align: middle;
+    font-family: arial;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
 }
 
 .cards {
@@ -70,7 +89,7 @@
 
 .wrapper {
     position: absolute;
-    max-width: 716px;
+
     margin: 30px 0px 0px 20px;
 
 }
@@ -96,12 +115,11 @@
 .first {
     display: flex;
     background: url(imgages/Group\ 58.jpg) 50%/ cover no-repeat;
-    
-    margin: 0px 0px 0px 0px;
+
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 
 
 
@@ -113,7 +131,7 @@
 }
 
 body {
-    margin: 0px 0px 0px 0px;
+    margin: 0px -190px 0px 0px;
     font-family: 'Inter', 'san-seif';
 
     background-color: #F3F1EC;
@@ -190,18 +208,48 @@ body {
 
 .sofa {
     margin-top: 100px;
-    background-image: url(imgages/sofa.png);
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-image: url("imgages/sofa64.png");
 
+    height: 600px;
+
+    background-repeat: no-repeat;
+    background-size: contain
+}
+.sofa2 {
+    background-image: url("imgages/sofa.png");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+
+@media (max-width: 768px)
+{
+    .sofa{
+        display: block;
+    }
+    .sofa2{
+        display: none;
+    }
 
 }
 
+@media (min-width: 769px)
+{
+    .sofa{
+        display: none;
+    }
+    .sofa2{
+        display: block;
+        margin-bottom: 300px;
+    }
+}
+
+
+
+
 .obiz {
-    margin-top: -150px;
+    margin-left: 50px;
 }
 
 .section_1 {
@@ -217,17 +265,17 @@ body {
 }
 
 .ocomp {
-    position: absolute;
+    position: relative;
     margin: -60px 0px 50px 120px;
 }
 
 .ocomp2 {
-    position: absolute;
+    position: relative;
     margin: -60px 0px 50px 80px;
 }
 
 .ocomp3 {
-    position: absolute;
+    position: relative;
     margin: -60px 0px 50px 130px;
 }
 
@@ -260,8 +308,9 @@ body {
 
     padding: 0.75rem 5.75rem;
     background: transparent;
-    margin-top: 100px;
+    margin-top: -600px;
     margin-left: -15px;
+    
 
 
 }
@@ -559,14 +608,16 @@ h3 {
     height: 51.3rem;
     background-color: #9EAF7C;
 }
+
 .txt {
     padding: 50px 20px 20px 50px;
-    
+
 }
 
 .ppc {
     padding-left: 90px;
 }
+
 .but {
     display: flex;
     align-items: center;
@@ -649,4 +700,10 @@ button {
     height: 60px;
     flex-shrink: 0;
     fill: #9EAF7C;
+}
+
+@media (max-width: 768px) {
+    .Top_menu {
+        display: none;
+    }
 }
