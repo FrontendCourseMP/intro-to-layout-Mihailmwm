@@ -69,12 +69,9 @@
 
 
 
-
-
-
-
-
-
+.Logo {
+    margin-right: 190px;
+}
 
 
 
@@ -105,8 +102,10 @@
     border-radius: 100px;
     background: var(--gr-text-color);
 
-    margin-top: -55%;
-    margin-left: 300%;
+    margin-top: -40px;
+
+    position: relative;
+    float: right;
  
   }
   .burger::before,
@@ -184,18 +183,28 @@
   }
 
 .menu-list2dv {
-    display: inline;
+    margin: -65px 10px 10px 100px;
 }
 
 .menu-list2 {
     
-  display: inline-flex;
+
 }
 
 .menu-list2, li {
     list-style-type: none;
+    display: inline;
 }
 
+.menu-item2 {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+  }
 
 
 
@@ -235,6 +244,33 @@
 
 }
 
+
+.znach1 {
+    padding: 5px 50px 50px 0px;
+
+    
+}
+
+.znach2 {
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.znach2__item {
+    list-style-type: none;
+    display: inline;
+    display: block;
+    display: inline;
+    
+}
+
+
+
+
+
+
+
 .dos {
     padding: 50px 10px 10px 0px;
 
@@ -242,8 +278,11 @@
 }
 
 .dost {
-    margin: -90px 10px 10px 70px;
+    margin: -60px 120px 10px 70px;
+}
 
+.dost {
+    margin: -60px 120px 10px 70px;
 }
 
 .sktb {
@@ -255,6 +294,7 @@
 
 
 
+
 .first {
     display: flex;
     background: url(imgages/Group\ 58.jpg) 50%/ cover no-repeat;
@@ -262,12 +302,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 
 }
 
 
 .umb {
-    padding-left: 50px;
+    padding-left: 5px;
     padding-right: 70px;
 }
 
@@ -281,6 +322,7 @@ body {
 .landing {
     display: flex;
     padding-top: 8.125rem;
+    margin-bottom: 50px;
 
 
 
@@ -316,7 +358,7 @@ body {
 
 .b1 {
     padding-top: 44px;
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
 .nich {
@@ -404,7 +446,19 @@ body {
     .menu-list2 {
         display: none;
     }
-    
+    .gmap1 {
+        display: block;
+    }
+    .gmap2 {
+        display: none;
+    }
+
+    .znach2 {
+        display: none;
+    }
+    .znach1 {
+        display: block;
+    }
 }
 
 @media (min-width: 769px)
@@ -455,8 +509,22 @@ body {
     display: block;
     }
 
-
+    .gmap1 {
+        display: none;
+    }
+    .gmap2 {
+        display:block ;
+    }
+    .basement {
+        display: none;
+    }
     
+    .znach2 {
+        display: block;
+    }
+    .znach1 {
+        display: none;
+    }
 }
 
 
@@ -467,7 +535,7 @@ body {
 }
 
 .section_1 {
-    padding: 60px 30px 80px 30px;
+    padding: 60px 60px 80px 30px;
     background: transparent;
 
 
@@ -511,9 +579,19 @@ body {
     line-height: normal;
     padding: 0 .1875rem;
 }
+.section_1 .p18{
+    color: var(--Btext-color);
+
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+}
 
 .section_2 {
-    margin: 35px 30px 35px 55px ;
+    margin: 35px 30px 50px 10px ;
     background: transparent;
 }
 
@@ -528,7 +606,7 @@ body {
 }
 
 .second {
-    margin: 10px 10px 10px 0px;
+    margin: 30px 10px 10px 0px;
     display: flex;
     background-repeat: no-repeat;
 
@@ -865,6 +943,7 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: 179.182%;
+    text-decoration: none;
 }
 
 .cl {
@@ -882,6 +961,17 @@ h3 {
     height: 51.3rem;
     background-color: #9EAF7C;
 }
+.gmap1 {
+
+
+}
+
+.gmap2 {
+
+}
+
+
+
 
 .txt {
     padding: 50px 20px 20px 50px;
@@ -896,7 +986,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30rem;
+    width: 27rem;
     height: 5.8rem;
     flex-shrink: 0;
     border-radius: 1rem;
