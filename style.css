@@ -58,25 +58,165 @@
     justify-content: center;
 }
 
-.Logo,
-.Top_menu {
-    margin-right: 50px;
-    display: inline-block
-}
 
-.Top_menu li {
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: middle;
-}
 
-.Top_menu a {
-    vertical-align: middle;
-    font-family: arial;
-    font-size: 15px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  
+  }
+  .burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+
+
+  
+    width: 50px;
+    height: 50px;
+  
+   
+    border-radius: 100px;
+    background: var(--gr-text-color);
+
+    margin-top: -55%;
+    margin-left: 300%;
+ 
+  }
+  .burger::before,
+  .burger::after {
+    margin-left: 7px;
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 3px;
+    border-radius: 50px;
+    
+    background: #ffffff;
+  }
+  .burger::before {
+    margin-top: 10px;
+
+    top: 0;
+    box-shadow: 0 14px 0  #ffffff;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    
+  }
+  .burger::after {
+    margin-bottom: 10px;
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+    
+  }
+
+
+  .burger-checkbox:checked + .burger::before {
+    margin-top: 0px;
+    top: 23px;
+    transform: rotate(45deg);
+    box-shadow: 0 10px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    margin-top: 0px;
+    bottom: 15px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+
+  
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #9EAF7C;;
+    list-style-type: none;
+    transform: translateX(550%);
+    transition: .3s;
+    width: 300px;
+    border-radius: 5%;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
     color: white;
+    font-size: 18px;
+    text-align: center;
     text-decoration: none;
+  }
+  .menu-item:hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+
+.menu-list2dv {
+    display: inline;
 }
+
+.menu-list2 {
+    
+  display: inline-flex;
+}
+
+.menu-list2, li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .cards {
     display: flex;
@@ -88,9 +228,10 @@
 }
 
 .wrapper {
+    display: flex;
     position: absolute;
 
-    margin: 30px 0px 0px 20px;
+    margin: 30px 30px 30px 30px;
 
 }
 
@@ -112,6 +253,8 @@
 
 }
 
+
+
 .first {
     display: flex;
     background: url(imgages/Group\ 58.jpg) 50%/ cover no-repeat;
@@ -120,10 +263,8 @@
     height: 100%;
     object-fit: cover;
 
-
-
-
 }
+
 
 .umb {
     padding-left: 50px;
@@ -211,9 +352,9 @@ body {
     background-image: url("imgages/sofa64.png");
 
     height: 600px;
-
     background-repeat: no-repeat;
     background-size: contain
+    
 }
 .sofa2 {
     background-image: url("imgages/sofa.png");
@@ -231,7 +372,39 @@ body {
     .sofa2{
         display: none;
     }
+    .pic1 {
 
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        flex-grow: 0;
+        width: 200px;
+    
+    }
+    .akder1 {
+        display: none;
+    }
+
+    .akder2 {
+        display: none;
+    }
+
+    .akder3 {
+        display: none;
+    }
+    .but111 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu-list2 {
+        display: none;
+    }
+    
 }
 
 @media (min-width: 769px)
@@ -243,6 +416,47 @@ body {
         display: block;
         margin-bottom: 300px;
     }
+    .pic1 {
+
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        margin: 10% 0% 0% 100%;
+        flex-grow: 0;
+        width: 500px;
+    
+    }
+    .trikar {
+        margin: -600px 0% 50% 0%;
+    }
+
+    .akder {
+        display: none;
+    }
+ 
+
+    .akder1 {
+        display: block;
+        margin-left: 200px;
+    }
+
+    .akder2 {
+        display: block;
+    }
+
+    .akder3 {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-list2 {
+    display: block;
+    }
+
+
+    
 }
 
 
@@ -299,17 +513,15 @@ body {
 }
 
 .section_2 {
-
+    margin: 35px 30px 35px 55px ;
     background: transparent;
-    margin-bottom: 30px;
 }
 
 .section_3 {
-
-    padding: 0.75rem 5.75rem;
+   
+    margin: 35px 30px px 55px ;
     background: transparent;
-    margin-top: -600px;
-    margin-left: -15px;
+ 
     
 
 
@@ -414,6 +626,68 @@ body {
     position: absolute;
     margin: -190px 53px 50px 80px;
 }
+
+
+
+
+
+
+
+
+
+.vverh {
+    margin: -620px 35px 35px 35px;
+}
+
+
+
+.akder {
+    border-radius: 8%;
+    box-shadow: rgba(0, 0, 0, 0.089) 3px 3px 1px 1px;
+    background-color: #efeae9ea;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.akder1 {
+    border-radius: 8%;
+    box-shadow: rgba(0, 0, 0, 0.089) 3px 3px 1px 1px;
+    background-color: #efeae9ea;
+    width: 330px;
+    margin: -900px 0px 0px 10%;
+    padding: 10px;
+}
+
+.akder2 {
+    border-radius: 8%;
+    box-shadow: rgba(0, 0, 0, 0.089) 3px 3px 1px 1px;
+    background-color: #efeae9ea;
+    width: 350px;
+    margin: -120px 0px 140px 60%;
+    padding: 10px;
+}
+.akder3 {
+    border-radius: 8%;
+    box-shadow: rgba(0, 0, 0, 0.089) 3px 3px 1px 1px;
+    background-color: #efeae9ea;
+    width: 350px;
+    margin: 0px 0px 10% 50%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -630,17 +904,18 @@ h3 {
     border: none;
 }
 
-.but2 {
+.but11 {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 30rem;
+    width: 50rem;
     height: 5.8rem;
     flex-shrink: 0;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background: var(--gr-text-color);
     border: none;
+    margin: -8% 1% 5% 1%;
+
 }
 
 .com {
@@ -703,7 +978,5 @@ button {
 }
 
 @media (max-width: 768px) {
-    .Top_menu {
-        display: none;
-    }
+  
 }
