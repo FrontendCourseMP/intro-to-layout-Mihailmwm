@@ -51,26 +51,22 @@
 
 * {
     box-sizing: border-box;
+  
+}
+
+* {
+    outline: 1px solid red;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
+    
 }
-
-
-
-
-
-
-
-
 
 
 
 
 .Logo {
-    margin-right: 190px;
+
 }
 
 
@@ -79,33 +75,18 @@
 
 .burger-checkbox {
     position: absolute;
-    visibility: hidden;
+    appearance: none;
   
   }
   .burger {
     position: relative;
-    z-index: 1;
     cursor: pointer;
     display: block;
-    position: relative;
     border: none;
-    background: transparent;
-    width: 40px;
-    height: 26px;
-
-
-  
     width: 50px;
     height: 50px;
-  
-   
     border-radius: 100px;
     background: var(--gr-text-color);
-
-    margin-top: -40px;
-
-    position: relative;
-    float: right;
  
   }
   .burger::before,
@@ -156,7 +137,6 @@
     top: 0;
     left: 0;
     position: absolute;
-    display: grid;
     gap: 12px;
     padding: 42px 0;
     margin: 0;
@@ -183,7 +163,7 @@
   }
 
 .menu-list2dv {
-    margin: -65px 10px 10px 100px;
+    
 }
 
 .menu-list2 {
@@ -194,6 +174,8 @@
 .menu-list2, li {
     list-style-type: none;
     display: inline;
+   
+
 }
 
 .menu-item2 {
@@ -238,21 +220,17 @@
 
 .wrapper {
     display: flex;
-    position: absolute;
-
-    margin: 30px 30px 30px 30px;
-
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8px;
 }
 
 
 .znach1 {
-    padding: 5px 50px 50px 0px;
 
-    
 }
 
 .znach2 {
-    list-style-type: none;
     display: inline;
     
 }
@@ -260,29 +238,29 @@
 .znach2__item {
     list-style-type: none;
     display: inline;
-    display: block;
-    display: inline;
     
 }
 
 
-
+.dos img{
+    width: 70px;
+    flex-shrink: 0;
+}
 
 
 
 
 .dos {
-    padding: 50px 10px 10px 0px;
-
-
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 0.5em;
 }
 
-.dost {
-    margin: -60px 120px 10px 70px;
-}
+
 
 .dost {
-    margin: -60px 120px 10px 70px;
+    
 }
 
 .sktb {
@@ -296,24 +274,20 @@
 
 
 .first {
-    display: flex;
     background: url(imgages/Group\ 58.jpg) 50%/ cover no-repeat;
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    padding-top: 10em;
+    padding-bottom: 5em;
     
 
 }
 
 
 .umb {
-    padding-left: 5px;
-    padding-right: 70px;
+    margin-bottom: 2em;
 }
 
 body {
-    margin: 0px -190px 0px 0px;
+    
     font-family: 'Inter', 'san-seif';
 
     background-color: #F3F1EC;
@@ -321,11 +295,8 @@ body {
 
 .landing {
     display: flex;
-    padding-top: 8.125rem;
-    margin-bottom: 50px;
-
-
-
+    padding-inline: 8px;
+    justify-content: center;
 }
 
 .Kaz {
@@ -347,18 +318,12 @@ body {
 
 .pic1 {
 
-    width: 100%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: center;
-    flex-grow: 0;
-    width: 200px;
+  
 
 }
 
 .b1 {
-    padding-top: 44px;
-    padding-left: 0px;
+    margin-bottom: 2em;
 }
 
 .nich {
@@ -392,8 +357,8 @@ body {
 .sofa {
     margin-top: 100px;
     background-image: url("imgages/sofa64.png");
-
     height: 600px;
+   
     background-repeat: no-repeat;
     background-size: contain
     
@@ -472,7 +437,7 @@ body {
     }
     .pic1 {
 
-        width: 100%;
+        
         margin-inline: auto;
         display: flex;
         justify-content: center;
@@ -509,12 +474,7 @@ body {
     display: block;
     }
 
-    .gmap1 {
-        display: none;
-    }
-    .gmap2 {
-        display:block ;
-    }
+    
     .basement {
         display: none;
     }
@@ -528,18 +488,18 @@ body {
 }
 
 
-
+.trikar img {
+    width: 100%;
+}
 
 .obiz {
-    margin-left: 50px;
+    
 }
 
 .section_1 {
-    padding: 60px 60px 80px 30px;
     background: transparent;
-
-
-
+    flex-grow: 1;
+    max-width: 400px;
 }
 
 .linee {
@@ -547,8 +507,7 @@ body {
 }
 
 .ocomp {
-    position: relative;
-    margin: -60px 0px 50px 120px;
+  
 }
 
 .ocomp2 {
@@ -565,7 +524,6 @@ body {
     color: var(--Wtext-color);
     font-size: 2.125rem;
     font-weight: 300;
-    padding: 0 .8125rem;
     font-family: Inter;
     font-style: normal;
 }
@@ -577,7 +535,6 @@ body {
     font-style: italic;
     font-weight: 400;
     line-height: normal;
-    padding: 0 .1875rem;
 }
 .section_1 .p18{
     color: var(--Btext-color);
@@ -591,7 +548,6 @@ body {
 }
 
 .section_2 {
-    margin: 35px 30px 50px 10px ;
     background: transparent;
 }
 
@@ -606,15 +562,13 @@ body {
 }
 
 .second {
-    margin: 30px 10px 10px 0px;
-    display: flex;
-    background-repeat: no-repeat;
+   
 
 
 }
 
 .section_5 {
-    padding: 60px 0px 0px 50px;
+
 }
 
 .section_6 {
@@ -623,22 +577,17 @@ body {
 }
 
 .section_7 {
-    padding: 1500px 30px 80px 30px;
     background: transparent;
 }
 
 .bl1 {
     border-radius: 20px;
     background: #FFF;
-    width: 300px;
-    height: 561px;
     flex-shrink: 0;
     margin-top: 20px;
 }
 
 .bl2 {
-    width: 300px;
-    height: 492px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #FFF;
@@ -646,8 +595,6 @@ body {
 }
 
 .bl3 {
-    width: 300px;
-    height: 402px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #FFF;
@@ -714,7 +661,7 @@ body {
 
 
 .vverh {
-    margin: -620px 35px 35px 35px;
+    
 }
 
 
@@ -802,7 +749,7 @@ p {
 }
 
 .Ulmb {
-    margin-left: -9px;
+
 }
 
 h2 {
@@ -958,12 +905,10 @@ h3 {
 
 
 .basement {
-    height: 51.3rem;
     background-color: #9EAF7C;
 }
 .gmap1 {
-
-
+    width: 100%;
 }
 
 .gmap2 {
@@ -974,7 +919,6 @@ h3 {
 
 
 .txt {
-    padding: 50px 20px 20px 50px;
 
 }
 
@@ -986,12 +930,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 27rem;
-    height: 5.8rem;
     flex-shrink: 0;
     border-radius: 1rem;
     background: var(--gr-text-color);
     border: none;
+    margin-inline: auto;
 }
 
 .but11 {
@@ -1035,10 +978,7 @@ h3 {
 }
 
 button {
-    padding: 0;
     margin: 0;
-    border: none;
-    background-color: transparent;
 }
 
 .ln {
@@ -1050,8 +990,7 @@ button {
 }
 
 .bb1 {
-    width: 301.154px;
-    height: 406.558px;
+
     flex-shrink: 0;
     border-radius: 20px;
     background: var(--Wtext-color);

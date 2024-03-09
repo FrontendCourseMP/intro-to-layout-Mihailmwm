@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="grid.html">
-    <link rel="stylesheet" href="gridcss.css">
-    <link rel="stylesheet" href="form.html">
+  
     <title>Logo</title>
 </head>
 
 <body>
-    <header>
+    <header style="
+    position: absolute;
+    width: 100%;
+    padding-block: 1em;">
 
         <div class="wrapper">
             <div class="Logo">
@@ -24,7 +25,7 @@
                 
                 <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                 <label for="burger-checkbox" class="burger"></label>
-                <ul class="menu-list">
+                <ul class="menu-list" style="display: none;">
                     <li><a href="#" class="menu-item">Главная</a>
                     <li>
                     <li><a href="#" class="menu-item">О компании</a>
@@ -38,7 +39,7 @@
                 </ul>
             </div>
 
-            <div class="menu-list2dv">
+            <div class="menu-list2dv" style="display: none;">
                 <ul class="menu-list2">
                     <li><a href="#" class="menu-item2" style="color: #9EAF7C;" >Главная</a>
                     <li>
@@ -77,9 +78,9 @@
                         </div>
                     </div>
                     <div class="b1">
-                        <button type="button" class="but">
-                            <a href="form.html" class="bs" >Оставить заявку</a>
-                        </button>
+                        <button type="button" class="but" style="color: var( --Wtext-color);
+                        padding: 1em;
+                        "> Оставить заявку</button>
                     </div>
                     <div class="znach1">
 
@@ -141,7 +142,7 @@
                 <img src="imgages/obrdr.png" alt="картинка обработка дерева" class="pic1">
                 <div class="trikar">
 
-                    <img src="imgages/12.png" alt="12">
+                    <img src="imgages/12.png" style="width: 100%;" alt="12">
                     <div class="ocomp">
                         <p class="p18">Лет на рынке</p>
                     </div>
@@ -153,9 +154,12 @@
                     <div class="ocomp3">
                         <p class="p18">в г.Алматы</p>
                     </div>
-                    <button type="button" class="but">
-                        <a href="form.html" class="bs" >Оставить заявку</a>
-                    </button>
+                    
+                    <div class="b1">
+                        <button type="button" class="but" style="color: var( --Wtext-color);
+                        padding: 1em;
+                        "> Оставить заявку</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -220,9 +224,11 @@
 
             <div class="but111">
 
-                <button type="button" class="but11">
-                    <a href="form.html" class="bs" >Оставить заявку</a>
-                </button>
+                <div class="b1">
+                    <button type="button" class="but" style="color: var( --Wtext-color);
+                    padding: 1em;
+                    "> Оставить заявку</button>
+                </div>
             </div>
 
 
@@ -267,9 +273,11 @@
                 <p class="kt">Кофейный столик</p>
                 <img src="imgages/k10.png" alt="Матрас для лежака">
                 <p class="kt">Матрас для лежака</p>
-                <button type="button" class="but">
-                    <a href="form.html" class="bs" >Оставить заявку</a>
-                </button>
+                <div class="b1">
+                    <button type="button" class="but" style="color: var( --Wtext-color);
+                    padding: 1em;
+                    "> Оставить заявку</button>
+                </div>
             </div>
         </section>
         <section class="nich">
@@ -291,9 +299,11 @@
                         персональных даных</a></p>
                 <div class="oszv">
 
-                    <button type="button" class="but">
-                        <a href="form.html" class="bs" >Оставить заявку</a>
-                    </button>
+                    <div class="b1">
+                        <button type="button" class="but" style="color: var( --Wtext-color);
+                        padding: 1em;
+                        "> Оставить заявку</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -317,9 +327,11 @@
                         <h3>Получение</h3>
                         <p class="p16">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
                     </div>
-                    <button type="button" class="but">
-                        <a href="form.html" class="bs" >Оставить заявку</a>
-                    </button>
+                    <div class="b1">
+                        <button type="button" class="but" style="color: var( --Wtext-color);
+                        padding: 1em;
+                        "> Оставить заявку</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -507,15 +519,10 @@
             </div>
             <div class="gmap1">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.987293541867!2d37.5953569565433!3d55.730361924031236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54be7ecdaa099%3A0x3cde668b7292f988!2z0J_QsNGA0Log0JPQvtGA0YzQutC-0LPQvg!5e0!3m2!1sru!2sru!4v1709577960153!5m2!1sru!2sru"
-                 width=450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  height="450" style="border:0;" width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
 
-            <div class="gmap2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.987293541867!2d37.5953569565433!3d55.730361924031236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54be7ecdaa099%3A0x3cde668b7292f988!2z0J_QsNGA0Log0JPQvtGA0YzQutC-0LPQvg!5e0!3m2!1sru!2sru!4v1709577960153!5m2!1sru!2sru"
-                 width=2560" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
 
         
             <div class="basement">
