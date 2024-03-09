@@ -62,9 +62,6 @@
     
 }
 
-
-
-
 .Logo {
 
 }
@@ -76,6 +73,7 @@
 .burger-checkbox {
     position: absolute;
     appearance: none;
+   
   
   }
   .burger {
@@ -132,20 +130,28 @@
     transition: bottom .3s, transform .3s .15s;
   }
 
+
+.open {
+    display: flex !important;
+}
+ 
   
   .menu-list {
-    top: 0;
-    left: 0;
+    right: 0;
     position: absolute;
     gap: 12px;
     padding: 42px 0;
-    margin: 0;
+    margin: 10;
     background: #9EAF7C;;
     list-style-type: none;
-    transform: translateX(550%);
+    
     transition: .3s;
     width: 300px;
     border-radius: 5%;
+    border-color: #5612deea;
+    justify-content: center;
+    padding-inline: 10px;
+    flex-direction:column;
   }
   .menu-item {
     display: block;
@@ -163,6 +169,7 @@
   }
 
 .menu-list2dv {
+    
     
 }
 
@@ -227,19 +234,9 @@
 
 
 .znach1 {
-
+    display: inline-block;
 }
 
-.znach2 {
-    display: inline;
-    
-}
-
-.znach2__item {
-    list-style-type: none;
-    display: inline;
-    
-}
 
 
 .dos img{
@@ -255,6 +252,7 @@
     align-items: center;
     margin-bottom: 1em;
     gap: 0.5em;
+
 }
 
 
@@ -406,6 +404,7 @@ body {
 
     .menu {
         display: block;
+        
     }
 
     .menu-list2 {
@@ -418,9 +417,7 @@ body {
         display: none;
     }
 
-    .znach2 {
-        display: none;
-    }
+
     .znach1 {
         display: block;
     }
@@ -428,6 +425,11 @@ body {
 
 @media (min-width: 769px)
 {
+ 
+
+
+
+
     .sofa{
         display: none;
     }
@@ -470,6 +472,8 @@ body {
     .menu {
         display: none;
     }
+
+    
     .menu-list2 {
     display: block;
     }
@@ -479,17 +483,27 @@ body {
         display: none;
     }
     
-    .znach2 {
-        display: block;
+
+    .landing {
+        display: inline;
+    }
+    .section_1 {
+        display: inline;
     }
     .znach1 {
-        display: none;
+        display: flex;
+        justify-content: stretch;
+        justify-content: center;
+        gap: 50px;
+        
     }
+  
 }
 
 
 .trikar img {
-    width: 100%;
+
+    display: inline-block;
 }
 
 .obiz {
@@ -562,7 +576,7 @@ body {
 }
 
 .second {
-   
+    padding-top: 5em;
 
 
 }
@@ -1006,6 +1020,3 @@ button {
     fill: #9EAF7C;
 }
 
-@media (max-width: 768px) {
-  
-}
