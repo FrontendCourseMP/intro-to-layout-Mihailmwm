@@ -353,12 +353,12 @@ body {
 }
 
 .sofa {
-    margin-top: 100px;
+    margin-top: -600px;
     background-image: url("imgages/sofa64.png");
     height: 600px;
-   
+
     background-repeat: no-repeat;
-    background-size: contain
+    background-size: cover
     
 }
 .sofa2 {
@@ -384,7 +384,7 @@ body {
         display: flex;
         justify-content: center;
         flex-grow: 0;
-        width: 200px;
+        width: 300px;
     
     }
     .akder1 {
@@ -421,13 +421,25 @@ body {
     .znach1 {
         display: block;
     }
+    .pic2 {
+        display: none;
+    }
+
+    
 }
 
 @media (min-width: 769px)
 {
  
 
+    .sqmed {
+        
+        
+    }
 
+    .pic1 {
+        display: none;
+    }
 
 
     .sofa{
@@ -437,20 +449,21 @@ body {
         display: block;
         margin-bottom: 300px;
     }
-    .pic1 {
+    .pic2 {
 
         
         margin-inline: auto;
         display: flex;
-        justify-content: center;
-        margin: 10% 0% 0% 100%;
+        justify-content: right;
+        margin: 0% 0% 0% 30%;
         flex-grow: 0;
-        width: 500px;
+        
+        width: 400px;
+
     
     }
-    .trikar {
-        margin: -600px 0% 50% 0%;
-    }
+    
+    
 
     .akder {
         display: none;
@@ -500,15 +513,52 @@ body {
   
 }
 
+.main_square_pictures  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 520px));
+    grid-auto-flow: row;
+    margin-left: 2%;
+    padding: 0 0.8rem;
+    
+}
+
+.main_square_pictur {
+    display: grid;
+    grid-template-columns: 100%;
+    
+    
+}
+.sqmed {
+        
+        
+}
+
+.linkgal {
+
+    font-size: 2rem;
+    grid-area: 1 / 1 / -1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    padding-bottom: 2em;
+    
+}
+
+.trikar {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 100%;
+}
 
 .trikar img {
 
-    display: inline-block;
-}
+ 
 
-.obiz {
     
 }
+
 
 .section_1 {
     background: transparent;
@@ -520,18 +570,14 @@ body {
     padding: 0px 0px 40px 0px;
 }
 
-.ocomp {
-  
-}
-
-.ocomp2 {
-    position: relative;
-    margin: -60px 0px 50px 80px;
-}
-
-.ocomp3 {
-    position: relative;
-    margin: -60px 0px 50px 130px;
+.imagegal {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
 }
 
 .section_1 h2 {
@@ -563,6 +609,7 @@ body {
 
 .section_2 {
     background: transparent;
+    
 }
 
 .section_3 {
@@ -671,10 +718,17 @@ body {
 
 
 
-
+.section_3 {
+    display: flex;
+    padding-inline: 8px;
+    justify-content: center;
+}
 
 
 .vverh {
+
+    
+    
     
 }
 
@@ -687,6 +741,14 @@ body {
     width: 200px;
     margin: 10px;
     padding: 10px;
+
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 0.5em;
+    
+    
+    
+    
 }
 
 .akder1 {
