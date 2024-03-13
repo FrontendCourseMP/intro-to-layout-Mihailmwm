@@ -55,7 +55,7 @@
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .header {
@@ -990,6 +990,14 @@ body {
 
 }
 
+
+
+::selection {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+
+  
 p {
     color: var(--Btext-color);
 
@@ -1203,6 +1211,45 @@ h3 {
     align-items: center;
 }
 
+.transition-rotate {
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    margin: 0 auto;
+ 
+    text-align: center;
+    max-width: 300px;
+  
+    cursor: pointer;
+    transition: 1s linear;
+  }
+  .transition-rotate:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+
+.bss {
+    padding: 1em;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: var(--gr-text-color);
+    border: none;
+    margin-inline: auto;
+
+    color: var(--Wtext-color);
+
+    font-family: Philosopher;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 179.182%;
+    text-decoration: none;
+}
 .but {
     padding: 2em;
     width: 250px;
@@ -1214,6 +1261,24 @@ h3 {
     background: var(--gr-text-color);
     border: none;
     margin-inline: auto;
+
+
+}
+
+.b1 :focus {
+    color: #00ffff;
+    transition: background-color 1s ease-in-out;
+   
+}
+
+.b1 :hover {
+    background-color: #89966e;
+    transition: background-color 1s ease-in-out;
+}
+
+.b1 :active {
+    background-color: #6b7556;
+    transition: background-color 1s ease-in-out;
 }
 
 .but11 {
@@ -1230,7 +1295,22 @@ h3 {
 
 }
 
+
+::placeholder {
+    color: gray;
+ }
+ 
+ .com::placeholder {
+    color:  gray;
+ }
+
+
+ .com:focus::placeholder {
+    opacity: 0;
+  
+  }
 .com {
+    color: gray;
     display: flex;
     width: 300px;
     height: 48px;
