@@ -1,75 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>Document</title>
     <style>
-     
+        .mutlogo {
+            padding-left: 10em;
+
+            transform: rotate(30deg) scale(1.5) skew(20deg, 10deg);
+        }
+
+        .lime-input:focus {
+            color: lime;
+        }
+
     </style>
 </head>
+
 <body>
-    <header>
-        
+    <header style="
+   
+    width: 100%;
+    background-color: black;
+    padding-block: 1em;">
+
+
+        <div class="wrapper" style="background-color: black; padding-bottom: 1em;">
+            <div class="Logo">
+                <img src="imgages/Logo.svg" alt="">
+            </div>
+
+            <div class="menu">
+
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list" style="display: none;">
+                    <li><a href="#" class="menu-item">Главная</a>
+                    <li>
+                    <li><a href="#" class="menu-item">О компании</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Об изделиях</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Отзывы</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Сотрудничество</a>
+                    <li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-list2dv">
+            <ul class="menu-list2">
+                <li><a href="#" class="menu-item2" style="color: #9EAF7C;">Главная</a>
+                <li>
+                <li><a href="#" class="menu-item2">О компании</a>
+                <li>
+                <li><a href="#" class="menu-item2">Об изделиях</a>
+                <li>
+                <li><a href="#" class="menu-item2">Отзывы</a>
+                <li>
+                <li><a href="#" class="menu-item2">Сотрудничество</a>
+                <li>
+                <li>
+                    <img src="imgages/inst.svg" alt="" style="padding: 0em;">
+                </li>
+                <li>
+                    <img src="imgages/tele.svg" alt="">
+                </li>
+                <li>
+                    <img src="imgages/wats.svg" alt="">
+                </li>
+            </ul>
+
+        </div>
+
+
+
     </header>
-    <form action="//httpbin.org/post" method="post">
-        <fieldset style="max-width: fit-content; margin: auto; border-color: aqua; background-color: bisque;" >
-            <legend>Registration field:</legend>
-            <label>Name: <input type="text" name="name" size="30" maxlength="100" required="required"></label><br />
-            <label>Specify your date of birth: <input type="date" name="date" /></label>
+    <section style="    padding-top: 1%;">
+
+
+        <form action="//httpbin.org/post" method="post" style="padding-top: 6em;">
+            <fieldset style="max-width: fit-content; margin: auto; border-color: aqua; background-color: bisque;">
+                <legend>Registration field:</legend>
+                <label>Name: <input class="lime-input" type="text" name="name" size="30" maxlength="100"
+                        required="required"></label><br />
+                <label>Specify your date of birth: <input class="lime-input" type="date" name="date" /></label>
                 <p>
                     Specify your gender:<br />
-                    <label><input type="radio" name="rating" value="Male"  /> Male</label>
-                    <label><input type="radio" name="rating" value="Female" /> Female</label>
-                    <label><input type="radio" name="rating" value="Not specified" /> Not specified</label>
+                    <label><input class="lime-input" type="radio" name="rating" value="Male" /> Male</label>
+                    <label><input class="lime-input" type="radio" name="rating" value="Female" /> Female</label>
+                    <label><input class="lime-input" type="radio" name="rating" value="Not specified" /> Not
+                        specified</label>
+
+
                 </p>
-                <label>Password: <input type="password" name="password" required="required" /> </label>
-                
-                
-                    
-                    <p>
-                        Convenient communication interval:<br />
-                        <label>
-                            <input type="checkbox" name="" value=""  /> Morning
-                        </label>
-                        <label>
-                            <input type="checkbox" name="" value="" /> Afternoon
-                        </label>
-                        <label>
-                            <input type="checkbox" name="" value="" /> Evening
-                        </label>
-                        <label>
-                            <input type="checkbox" name="" value="" /> Night
-                        </label>
-                    </p>
-            
+                <label>Password: <input class="lime-input" type="password" name="password" required="required" />
+                </label>
 
-                
-        </fieldset><br />
-        <fieldset style="max-width: fit-content; margin: auto; border-color: aqua; background-color: bisque;">
-            <legend>Contact Information:</legend>
-            <label>Email: <input type="email" name="email" size="30" maxlength="100" placeholder="example@gmail.com" required="required"></label><br />
-            <label>Phone number: <input type="tel" name="tel" size="28" placeholder="+79" maxlength="100" required="required"></label><br />
-            <input type="submit" value="continue" />
-        </fieldset>
+
+
+                <p>
+                    Convenient communication interval:<br />
+                    <label>
+                        <input type="checkbox" name="" value="" /> Morning
+                    </label>
+                    <label>
+                        <input type="checkbox" name="" value="" /> Afternoon
+                    </label>
+                    <label>
+                        <input type="checkbox" name="" value="" /> Evening
+                    </label>
+                    <label>
+                        <input type="checkbox" name="" value="" /> Night
+                    </label>
+                </p>
 
 
 
 
+
+            </fieldset><br />
+            <fieldset style="max-width: fit-content; margin: auto; border-color: aqua; background-color: bisque;">
+                <legend>Contact Information:</legend>
+                <label>Email: <input class="lime-input" type="email" name="email" size="30" maxlength="100"
+                        placeholder="example@gmail.com" required="required"></label><br />
+                <label>Phone number: <input class="lime-input" type="tel" name="tel" size="28" placeholder="+79"
+                        maxlength="100" required="required"></label><br />
+                <input type="submit" value="continue" />
+            </fieldset>
+
+
+
+    </section>
 
     </form>
-    <footer>
+    <footer class="">
+
         <div class="contact">
-            <h2 class="H2v">Контакты</h2>
-            <img class="mapp" src="imgages/map.jpg" alt="">
-            
-            
+
+            <div class="obiz">
+                <h2 class="H2v" style="padding:1em 1em 1em 1em">Контакты</h2>
+            </div>
+            <div class="mutlogo">
+                <div class="Logo">
+                    <img src="imgages/Logo.svg" alt="">
+                </div>
+            </div>
+
+            <div class="gmap1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.987293541867!2d37.5953569565433!3d55.730361924031236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54be7ecdaa099%3A0x3cde668b7292f988!2z0J_QsNGA0Log0JPQvtGA0YzQutC-0LPQvg!5e0!3m2!1sru!2sru!4v1709577960153!5m2!1sru!2sru"
+                    height="450" style="border:0;" width="100%" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+
+
             <div class="basement">
                 <div class="txt">
-                    <a href="form.html"><h1>Форма</h1></a>
-                    <a href="grid.html"><h1>Задание на Grid</h1></a>
-                 
+                    <a href="form.html">
+                        <h1>Форма</h1>
+                    </a>
+                    <a href="grid.html">
+                        <h1>Задание на Grid</h1>
+                    </a>
+
                     <p class="bs">Адрес - Москва, Степана Разина 119</p>
                     <p class="bs">Телефон - 7 982 658 25 85</p>
                     <p class="bs">ТОО «Консалтинговая Компания Financial-Tax Analytics»</p>
@@ -84,5 +184,16 @@
         </div>
         </div>
     </footer>
+    <script>
+
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+
+            document.querySelector('.menu-list').classList.toggle('open');
+
+        })
+
+    </script>
 </body>
+
 </html>
