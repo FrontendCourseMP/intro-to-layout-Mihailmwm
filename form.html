@@ -10,13 +10,45 @@
     <style>
         .mutlogo {
             padding-left: 10em;
+            width: 50%;
 
             transform: rotate(30deg) scale(1.5) skew(20deg, 10deg);
+            padding-bottom: 10em;
         }
 
         .lime-input:focus {
-            color: lime;
+            color: orange;
         }
+
+        dt {
+            list-style-type: lower-alpha;
+        }
+
+        dd::after {
+            content: "🛈";
+        }
+
+        dd::before {
+            content: "🛈";
+        }
+
+        input[type="checkbox"]:checked+label {
+            text-decoration: line-through;
+        }
+
+        dd:nth-child(even) {
+            background-color: rgb(168, 156, 156);
+            color: greenyellow;
+        }
+
+        dd:nth-child(odd) {
+            background-color: red;
+            color: blue;
+        }
+        input:required {
+        background-color: #000000;
+        color: rgb(245, 245, 245);
+}
 
     </style>
 </head>
@@ -80,11 +112,12 @@
 
 
     </header>
-    <section style="    padding-top: 1%;">
+    <section style="max-width: fit-content;     margin: auto;   padding-top: 1%;">
 
 
         <form action="//httpbin.org/post" method="post" style="padding-top: 6em;">
-            <fieldset style="max-width: fit-content; margin: auto; border-color: aqua; background-color: bisque;">
+            <fieldset
+                style="max-width: fit-content; margin: auto; border-color: rgb(0, 0, 0); background-color: #bbda7e">
                 <legend>Registration field:</legend>
                 <label>Name: <input class="lime-input" type="text" name="name" size="30" maxlength="100"
                         required="required"></label><br />
@@ -124,7 +157,8 @@
 
 
             </fieldset><br />
-            <fieldset style="max-width: fit-content; margin: auto; border-color: aqua; background-color: bisque;">
+            <fieldset
+                style=" margin: auto; border-color: rgb(0, 0, 0); background-color:  #bbda7e">
                 <legend>Contact Information:</legend>
                 <label>Email: <input class="lime-input" type="email" name="email" size="30" maxlength="100"
                         placeholder="example@gmail.com" required="required"></label><br />
@@ -137,6 +171,39 @@
 
     </section>
 
+    </form>
+    <fieldset style="max-width: 28em; margin: auto; border-color: rgb(0, 0, 0); background-color: #bbda7e">
+        <legend>Registration field:</legend>
+        <form>
+            <dl>
+                <dt>Псевдоэлемент</dt>
+                <div class="">
+
+                    <dd> ::before - псевдоэлемент, добавляющий контент в начало выбранного элемента.</dd>
+                    <dd> ::after - псевдоэлемент, добавляющий контент в конец выбранного элемента.</dd>
+                    <dd> ::first-letter - псевдоэлемент, применяющий стили к первой букве выбранного элемента.</dd>
+                    <dd> ::first-line - псевдоэлемент, применяющий стили к первой строке выбранного элемента.</dd>
+                </div>
+            </dl>
+
+            <dl>
+                <dt>Псевдокласс</dt>
+                <div class="">
+
+                    <dd> :hover - псевдокласс, применяющий стили при наведении курсора на элемент.</dd>
+                    <dd> :active - псевдокласс, применяющий стили при активации элемента (нажатие и удержание).</dd>
+                    <dd> :visited - псевдокласс, применяющий стили к посещенным ссылкам.</dd>
+                    <dd> :checked - псевдокласс, применяющий стили к выбранным элементам формы (например, чекбоксам).
+                    </dd>
+                </div>
+            </dl>
+
+            <input type="checkbox" checked> ::before
+            <input type="checkbox"> ::after
+            <input type="checkbox" checked> :hover
+            <input type="checkbox"> :active
+
+    </fieldset>
     </form>
     <footer class="">
 

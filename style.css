@@ -73,6 +73,7 @@
 .burger-checkbox {
     position: absolute;
     appearance: none;
+    
    
   
   }
@@ -993,8 +994,8 @@ body {
 
 
 ::selection {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 145, 0);
   }
 
   
@@ -1295,7 +1296,9 @@ h3 {
 
 }
 
-
+.com:focus {
+    color: orange;
+}
 ::placeholder {
     color: gray;
  }
@@ -1320,6 +1323,13 @@ h3 {
     border-radius: 60px;
     background: var(--White, #FFF);
     border: none;
+}
+.com2:focus {
+    color: orange;
+}
+
+.com:focus::placeholder {
+    opacity: 0;
 }
 
 .com2 {

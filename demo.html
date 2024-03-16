@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+            position: relative;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            padding-left: 1em;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .card-front {
+            background-color: #54af5a;
+            color: #333;
+
+        }
+
+        .card-back {
+            background-color: #ff2600;
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+
+        .marquee {
+            position: fixed;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: marquee 15s linear infinite;
+        }
+
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(400%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .dry {
+           
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="
+   
+    width: 100%;
+    margin-bottom: 6em;
+    background-color: black;
+    padding-block: 1em;">
+
+
+
+        <div class="wrapper" style="background-color: black; padding-bottom: 1em;">
+            <div class="Logo">
+                <img src="imgages/Logo.svg" alt="">
+            </div>
+
+            <div class="menu">
+
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list" style="display: none;">
+                    <li><a href="#" class="menu-item">Главная</a>
+                    <li>
+                    <li><a href="#" class="menu-item">О компании</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Об изделиях</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Отзывы</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Сотрудничество</a>
+                    <li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-list2dv">
+            <ul class="menu-list2">
+                <li><a href="#" class="menu-item2" style="color: #9EAF7C;">Главная</a>
+                <li>
+                <li><a href="#" class="menu-item2">О компании</a>
+                <li>
+                <li><a href="#" class="menu-item2">Об изделиях</a>
+                <li>
+                <li><a href="#" class="menu-item2">Отзывы</a>
+                <li>
+                <li><a href="#" class="menu-item2">Сотрудничество</a>
+                <li>
+                <li>
+                    <img src="imgages/inst.svg" alt="" style="padding: 0em;">
+                </li>
+                <li>
+                    <img src="imgages/tele.svg" alt="">
+                </li>
+                <li>
+                    <img src="imgages/wats.svg" alt="">
+                </li>
+            </ul>
+
+        </div>
+
+
+
+    </header>
+    <marquee>Бегущая строка</marquee>
+    <div class="dry">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h1>Сторона 1</h1>
+                    <p>Наведите курсор на карточку чтобы перевернуть её</p>
+                </div>
+                <div class="card-back">
+                    <h1>Сторона 2</h1>
+                    <p>Уведите курсор в сторону чтобы перевернуть карточку обратно</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+    
+
+    <footer class="">
+
+        <div class="contact">
+
+            <div class="obiz">
+                <h2 class="H2v" style="padding:1em 1em 1em 1em">Контакты</h2>
+            </div>
+            <div class="mutlogo">
+                <div class="Logo">
+                    <img src="imgages/Logo.svg" alt="">
+                </div>
+            </div>
+
+            <div class="gmap1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.987293541867!2d37.5953569565433!3d55.730361924031236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54be7ecdaa099%3A0x3cde668b7292f988!2z0J_QsNGA0Log0JPQvtGA0YzQutC-0LPQvg!5e0!3m2!1sru!2sru!4v1709577960153!5m2!1sru!2sru"
+                    height="450" style="border:0;" width="100%" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+
+
+            <div class="basement">
+                <div class="txt">
+                    <a href="form.html">
+                        <h1>Форма</h1>
+                    </a>
+                    <a href="grid.html">
+                        <h1>Задание на Grid</h1>
+                    </a>
+
+                    <p class="bs">Адрес - Москва, Степана Разина 119</p>
+                    <p class="bs">Телефон - 7 982 658 25 85</p>
+                    <p class="bs">ТОО «Консалтинговая Компания Financial-Tax Analytics»</p>
+                    <p class="bs">БИН 181 040 010 133</p>
+                    <p class="bs">Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304</p>
+                    <p class="bs">Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60</p>
+                    <p class="bs">ИИК KZ76 9650 3F00 0817 5335</p>
+                    <p class="bs">БИК IRTYKZKA в АО "ForteBank"</p>
+                    <p class="bs">мобильный/ватсап + 7 778 775 77 68, info@fintax.kz</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+
+            document.querySelector('.menu-list').classList.toggle('open');
+
+        })
+
+    </script>
+</body>
+
+</html>
