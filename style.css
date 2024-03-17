@@ -5,52 +5,58 @@
     --Btext-color: #000;
     font-size: 62.5%;
     --gr-but-color: #617146;
+    
 }
 
-@font-face {
+.philosopher-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+   
     font-family: 'Philosopher';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/philosopher-v19-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    
 }
 
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    
     font-family: 'Philosopher';
     font-style: italic;
     font-weight: 700;
-    src: url('../fonts/philosopher-v19-latin-700italic.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/philosopher-v19-latin-700 italic.woff2') format('woff2');
+    
 }
 
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    
 }
-
-/* inter-700 - latin */
 
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/inter-v13-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    
+} */
 
 * {
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 
 }
 
@@ -69,8 +75,6 @@
   .burger-checkbox {
     position: absolute;
     appearance: none;
-
-
   }
 
   .burger {
@@ -103,7 +107,6 @@
     top: 0;
     box-shadow: 0 14px 0  #ffffff;
     transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
-
   }
 
   .burger::after {
@@ -258,7 +261,7 @@
 
 .first {
     z-index: 0;
-    background: url(imgages/Group\ 58.jpg) 50%/ cover no-repeat;
+    background: url(imgages/Group\ 58.jpg ) 50%/ cover no-repeat ;
     padding-top: 10em;
     padding-bottom: 5em;
 }
@@ -300,7 +303,7 @@ body {
 
 .nich {
     display: flex;
-    background: url(imgages/Group\ 68.jpg) 50%/ cover no-repeat;
+    background: url(imgages/Group\ 68.jpg ) 50%/ cover no-repeat;
     margin-top: 50px;
     width: 100%;
     height: 100%;
@@ -418,7 +421,7 @@ body {
         justify-content: right;
         margin: 0% 0% 0% 30%;
         flex-grow: 0;
-        width: 400px;
+        width: 350px;
     }
 
     .akder {
@@ -585,8 +588,8 @@ body {
 
 .onepic {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    /* grid-template-columns: 100%; */
+    /* grid-template-rows: 100%; */
 }
 
 .onpi {
@@ -734,7 +737,7 @@ body {
     border-radius: 8%;
     box-shadow: rgba(0, 0, 0, 0.089) 3px 3px 1px 1px;
     background-color: #efeae9ea;
-    width: 350px;
+    max-width: 350px;
     margin: -120px 0px 140px 60%;
     padding: 10px;
 }
@@ -956,9 +959,10 @@ h3 {
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height
-}
+    line-height:normal;
 
+    
+}
 
 .basement {
     background-color: #4E5D37;
