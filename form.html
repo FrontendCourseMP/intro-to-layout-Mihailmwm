@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Панкратов Михаил Юрьевич">
     <meta name="Address" content="г. Москва">
+    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <title>Form</title>
@@ -70,7 +71,7 @@
                 <img src="imgages/Logo.svg" alt="">
             </div>
 
-            <div class="menu">
+            <div class="menu" style="z-index: 10;">
 
                 <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                 <label for="burger-checkbox" class="burger"></label>
@@ -202,10 +203,16 @@
                 </div>
             </dl>
 
-            <input type="checkbox" checked> ::before
-            <input type="checkbox"> ::after
-            <input type="checkbox" checked> :hover
-            <input type="checkbox"> :active
+            <input type="checkbox" checked> <del>::before</del>
+            <input type="checkbox" checked> <del>::after</del>
+            <input type="checkbox"> ::first-letter
+            <input type="checkbox"> ::first-line
+            <br>
+            <input type="checkbox" checked> <del>::hover</del>
+            <input type="checkbox" checked> <del>::active</del>
+            <input type="checkbox"> ::visited
+            <input type="checkbox" checked> <del>::checked</del>
+
 
     </fieldset>
     </form>
